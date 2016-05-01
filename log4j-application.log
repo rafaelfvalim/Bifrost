@@ -1,0 +1,16 @@
+2016-04-29 18:46:11 INFO  EnvConfRecebto:37 - Gerando envento da mensagem
+2016-04-29 18:46:11 INFO  EnvConfRecebto:57 - Criando XML do Objeto TEnvEvento 
+2016-04-29 18:46:48 INFO  EnvConfRecebto:37 - Gerando envento da mensagem
+2016-04-29 18:46:48 INFO  EnvConfRecebto:57 - Criando XML do Objeto TEnvEvento 
+2016-04-30 19:38:00 INFO  EnvConfRecebto:37 - Gerando envento da mensagem
+2016-04-30 19:38:00 INFO  EnvConfRecebto:57 - Criando XML do Objeto TEnvEvento 
+2016-04-30 20:12:08 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:14:07 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:18:37 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:19:05 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:25:41 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:53:22 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:55:18 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:55:19 DEBUG RetEnvConfRecebto:25 - Parse return of webservice to object sucessful!
+2016-04-30 20:58:16 INFO  RetEnvConfRecebto:20 - Gerando envento em lote da mensagem
+2016-04-30 20:58:17 DEBUG RetEnvConfRecebto:25 - Parse return of webservice to object sucessful!

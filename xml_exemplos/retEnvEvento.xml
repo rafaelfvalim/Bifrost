@@ -1,0 +1,9 @@
+<retEnvEvento xmlns="http://www.portalfiscal.inf.br/nfe"
+	versao="1.00">
+	<idLote>20141015173952</idLote>
+	<tpAmb>2</tpAmb>
+	<verAplic>SP_EVENTOS_PL_100</verAplic>
+	<cOrgao>35</cOrgao>
+	<cStat>225</cStat>
+	<xMotivo>Rejeição: Falha no Schema XML</xMotivo>
+</retEnvEvento>  
