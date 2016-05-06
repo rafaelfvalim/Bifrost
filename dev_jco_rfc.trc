@@ -1,0 +1,703 @@
+
+**** Error file opened at 20160505 143255 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Thu May 05 14:32:55,402]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field REQUTEXT not a member of INPUT
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:384)
+	at com.sap.conn.jco.rt.AbstractRecord.getString(AbstractRecord.java:2866)
+	at br.octa.server.sap.StepByStepServer$StfcConnectionHandler.handleRequest(StepByStepServer.java:89)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 14:33:07,206]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field REQUTEXT not a member of INPUT
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:384)
+	at com.sap.conn.jco.rt.AbstractRecord.getString(AbstractRecord.java:2866)
+	at br.octa.server.sap.StepByStepServer$StfcConnectionHandler.handleRequest(StepByStepServer.java:89)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 14:33:19,504]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field REQUTEXT not a member of INPUT
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:384)
+	at com.sap.conn.jco.rt.AbstractRecord.getString(AbstractRecord.java:2866)
+	at br.octa.server.sap.StepByStepServer$StfcConnectionHandler.handleRequest(StepByStepServer.java:89)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160505 145417 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Thu May 05 14:54:17,363]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.test.StatefulServerExample$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 14:54:28,101]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.test.StatefulServerExample$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 14:54:39,078]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.test.StatefulServerExample$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160505 145735 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Thu May 05 14:57:35,748]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.test.StatefulServerExample$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 14:57:52,119]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.test.StatefulServerExample$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160505 150226 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Thu May 05 15:02:26,099]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Thu May 05 15:03:05,101]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 002017 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Fri May 06 00:20:17,286<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.11.50.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.11.50.153:3300' not reached
+TIME        Fri May 06 00:20:17 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20160506 002030 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Fri May 06 00:20:30,472<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.11.50.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.11.50.153:3300' not reached
+TIME        Fri May 06 00:20:30 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20160506 112339 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 11:23:39,443]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 112416 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 11:24:16,914]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 112540 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 11:25:40,205]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 112712 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 11:27:12,880]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.server.sap.Server$MyFunctionHandlerFactory] returns null for the function STFC_CONNECTION
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 132221 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Fri May 06 13:22:21,962<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56377
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Fri May 06 13:22:21,996<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56376
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Fri May 06 13:22:22,018<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56377
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [4] >Fri May 06 13:22:22,019<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56377
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Fri May 06 13:22:22,022<    
+>RfcIoException:
+    message: CPIC-CALL: CMRCV on convId: 55940407
+no SAP ErrInfo available
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Fri May 06 13:22:22,024<    
+>RfcIoException:
+    message: CPIC-CALL: CMRCV on convId: 55940407
+no SAP ErrInfo available
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [2] >Fri May 06 13:22:22,025<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: CMRCV on convId: 55940407
+no SAP ErrInfo available
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Fri May 06 13:22:22,026<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56376
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [3] >Fri May 06 13:22:22,027<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.11.50.153:sapgw00' broken
+TIME        Fri May 06 13:22:21 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=10.11.50.153:3300; L=10.11.50.70:56376
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Fri May 06 13:22:22,032<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:22:22 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10051
+ERRNO TEXT  WSAENETUNREACH: Network is unreachable
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:22:45,058<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:22:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     5
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:23:08,057<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:23:08 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     6
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:23:10,060<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:23:10 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     7
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:23:18,065<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:23:18 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     8
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:23:34,080<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:23:34 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     9
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:24:27,089<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:24:27 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     10
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:25:32,104<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:25:32 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     11
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:27:20,140<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:27:20 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     12
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:31:36,215<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:31:36 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     13
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Fri May 06 13:40:29,344<    RfcException: [null]
+    message: Connect to SAP gateway failed
+    Connection parameters: TPNAME=JCO_SERVER GWHOST=10.11.50.153 GWSERV=sapgw00
+
+ERROR       partner '10.11.50.153:sapgw00' not reached
+TIME        Fri May 06 13:40:29 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     14
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20160506 142900 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 14:29:00,850]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (128) JCO_ERROR_NOT_SUPPORTED: The function handler factory [br.octa.server.server.sap.Server$MyFunctionHandlerFactory] returns null for the function /KTT/SENDCONSNFEDESTWS
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1038)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 183038 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 18:30:38,010]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:105)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Fri May 06 18:30:38,034]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-12-2' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160506 185741 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 18:57:41,863]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:105)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Fri May 06 18:57:41,883]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-15-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+

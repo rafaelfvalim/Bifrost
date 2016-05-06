@@ -1,9 +1,9 @@
-<retEnvEvento xmlns="http://www.portalfiscal.inf.br/nfe"
-	versao="1.00">
-	<idLote>20141015173952</idLote>
+<?xml version="1.0" encoding="UTF-8"?>
+<consNFeDest versao="1.01" xmlns="http://www.portalfiscal.inf.br/nfe">
 	<tpAmb>2</tpAmb>
-	<verAplic>SP_EVENTOS_PL_100</verAplic>
-	<cOrgao>35</cOrgao>
-	<cStat>225</cStat>
-	<xMotivo>Rejeição: Falha no Schema XML</xMotivo>
-</retEnvEvento>  
+	<xServ>CONSULTAR NFE DEST</xServ>
+	<CNPJ>2414494356</CNPJ>
+	<indNFe>0</indNFe>
+	<indEmi>0</indEmi>
+	<ultNSU>0</ultNSU>
+</consNFeDest>

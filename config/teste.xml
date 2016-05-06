@@ -1,0 +1,10 @@
+<retConsNFeDest versao="1.01"
+	xmlns="http://www.portalfiscal.inf.br/nfe">
+	<tpAmb>2</tpAmb>
+	<verAplic>1.1.1</verAplic>
+	<cStat>137</cStat>
+	<xMotivo>Nenhum documento localizado para o destinatario</xMotivo>
+	<dhResp>2016-05-05T23:46:52</dhResp>
+	<indCont>1</indCont>
+	<ultNSU>192447577</ultNSU>
+</retConsNFeDest>

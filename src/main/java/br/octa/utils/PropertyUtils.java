@@ -13,7 +13,7 @@ public class PropertyUtils {
 
 	public static String getValue(String propertie) {
 		try {
-			input = new FileInputStream("config.properties");
+			input = new FileInputStream("config/config.properties");
 			prop.load(input);
 			return prop.getProperty(propertie);
 		} catch (IOException e) {

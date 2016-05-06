@@ -1,13 +1,12 @@
-<retEnviNFe xmlns="http://www.portalfiscal.inf.br/nfe"
-	versao="2.00">
+<retConsNFeDest versao="1.01"
+	xmlns="http://www.portalfiscal.inf.br/nfe">
 	<tpAmb>1</tpAmb>
-	<verAplic>SVAN_2.1.0</verAplic>
-	<cStat>103</cStat>
-	<xMotivo>Lote recebido com sucesso</xMotivo>
-	<cUF>32</cUF>
-	<dhRecbto>2012-12-10T17:31:24</dhRecbto>
-	<infRec>
-		<nRec>0000000000000000</nRec>
-		<tMed>1</tMed>
-	</infRec>
-</retEnviNFe> 
+	<verAplic>1.1.1</verAplic>
+	<cStat>252</cStat>
+	<xMotivo>Rejeicao: Ambiente informado diverge do Ambiente de
+		recebimento</xMotivo>
+	<dhResp>2016-05-06T10:13:51</dhResp>
+</retConsNFeDest>
+
+
+

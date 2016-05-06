@@ -32,5 +32,19 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/javax.wsdl_1.6.2.v201012040545.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+	<classpathentry kind="lib" path="org.pushingpixels.trident_1.2.0.v20100204-1500.jar" sourcepath="org.pushingpixels.trident.source_1.2.0.v20100204-1500.jar"/>
+	<classpathentry kind="lib" path="org.eclipse.e4.xwt_0.9.1.SNAPSHOT.jar" sourcepath="org.eclipse.e4.xwt.source_0.9.1.SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="org.eclipse.e4.xwt.forms_0.9.1.SNAPSHOT.jar" sourcepath="org.eclipse.e4.xwt.forms.source_0.9.1.SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.core.databinding_1.5.0.v20150422-0725.jar" sourcepath="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.core.databinding_1.5.0.v20150422-0725.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar" sourcepath="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.jface.databinding_1.7.0.v20150406-2148.jar" sourcepath="C:/Users/Rafael/Desktop/eclipse/plugins/org.eclipse.jface.databinding_1.7.0.v20150406-2148.jar"/>
+	<classpathentry kind="lib" path="jgoodies-common-1.8.0.jar" sourcepath="jgoodies-common-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
