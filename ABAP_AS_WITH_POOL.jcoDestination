@@ -1,10 +1,10 @@
-#for tests only !
-#Thu May 05 14:12:03 BRT 2016
+## Octa IT Soltions #
+#Tue May 10 18:27:15 BRT 2016
 jco.client.lang=PT
 jco.destination.peak_limit=10
 jco.client.client=300
 jco.client.passwd=r4f43l11
 jco.client.user=rvalim
 jco.client.sysnr=00
-jco.destination.pool_capacity=2
-jco.client.ashost=10.11.50.153
+jco.destination.pool_capacity=3
+jco.client.ashost=191.241.240.50

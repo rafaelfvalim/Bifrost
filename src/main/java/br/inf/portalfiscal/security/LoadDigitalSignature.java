@@ -35,7 +35,7 @@ public class LoadDigitalSignature {
 		// TODO Auto-generated constructor stub
 		ConfigUtils config = new ConfigUtils();
 		String caminhoDoCertificadoDoCliente =config.getArquivoCertificado();
-		String senhaDoCertificadoDoCliente =config.getSenhaCerticado();
+		String senhaDoCertificadoDoCliente =config.getSenhaCertificado();
 		String arquivoCacertsGeradoParaCadaEstado = config.getNFeCacerts();
 
 		logger.debug(">>>>>>Carrega Certificados");

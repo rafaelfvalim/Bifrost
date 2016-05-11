@@ -15,12 +15,13 @@ import br.inf.portalfiscal.nfe.ObjectFactory;
 import br.inf.portalfiscal.nfe.TEnvEvento;
 import br.octa.enums.TipoInterfaceEnum;
 import br.octa.utils.CertificarXMLUtils;
+import br.octa.view.BifrostView;
 
 public class EnvConfRecebtoHelper {
 	final static Logger logger = Logger.getLogger(EnvConfRecebtoHelper.class);
 	
 	public static String toXML(TEnvEvento envEvento) {
-		logger.info("Gerando XML EnvConfRecebto");
+		info("Gerando XML EnvConfRecebto");
 		try {
 			return strValueOf(envEvento);
 		} catch (JAXBException e) {
@@ -35,7 +36,7 @@ public class EnvConfRecebtoHelper {
 	}
 
 	public static String strValueOf(TEnvEvento envEvento) throws JAXBException {
-		logger.info("Criando XML do Objeto TEnvEvento ");
+		info("Criando XML do Objeto TEnvEvento ");
 		JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 		Marshaller marshaller = context.createMarshaller();
 		JAXBElement<TEnvEvento> element = new ObjectFactory().createEnvEvento(envEvento);
@@ -53,7 +54,7 @@ public class EnvConfRecebtoHelper {
 	}
 
 	public static TEnvEvento createEnvConfRecebtoFromXMl(String xmlEnvEvento) {
-		logger.info("Gerando envento em lote da mensagem");
+		info("Gerando envento em lote da mensagem");
 		try {
 			JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -67,5 +68,8 @@ public class EnvConfRecebtoHelper {
 		}
 		return null;
 	}
-
+	public static void info(String msg) {
+		Logger.getLogger(EnvConfRecebtoHelper.class).info(msg);
+		BifrostView.infoView(msg);
+	}
 }

@@ -6,6 +6,7 @@ import br.octa.utils.ConfigUtils;
 
 /**
  * Work queue para execução de atividades em um thread pool.
+ * Classe n�o implementada no projeto Bifrost
  */
 public class WorkQueue
 {

@@ -1,7 +1,7 @@
-#for tests only !
-#Thu May 05 14:08:51 BRT 2016
+## Octa IT Soltions #
+#Tue May 10 18:27:15 BRT 2016
 jco.server.connection_count=20
-jco.server.gwhost=10.11.50.153
+jco.server.gwhost=191.241.240.50
 jco.server.progid=JCO_SERVER
 jco.server.gwserv=sapgw00
 jco.server.repository_destination=ABAP_AS_WITH_POOL

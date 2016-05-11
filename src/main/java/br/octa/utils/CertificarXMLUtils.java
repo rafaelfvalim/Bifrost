@@ -52,7 +52,8 @@ public class CertificarXMLUtils {
 		PropertyUtils prop  = new PropertyUtils();
 		String arquivoCertificado = prop.getValue("arquivo_certificado");
 		String senhaCertificado = prop.getValue("senha_certificado");
-		String xMLOutput = "NFE_IN/"+tipoInterface.value()+"_"+DateUtils.getDateAsString("hhmmssddMMyy")+".xml";
+		String temp = System.getProperty("java.io.tmpdir");
+		String xMLOutput = temp+tipoInterface.value()+"_"+DateUtils.getDateAsString("hhmmssddMMyy")+".xml";
 		XMLSignatureFactory sig = null;
 		SignedInfo si1 = null;
 		KeyInfo ki1 = null;

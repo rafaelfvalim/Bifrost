@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import br.inf.portalfiscal.nfe.TRetEnvEvento;
 import br.inf.portalfiscal.www.nfe.wsdl.recepcaoevento.RecepcaoEventoStub.NfeRecepcaoEventoResult;
 import br.octa.to.TRetEnvEventoTO;
+import br.octa.view.BifrostView;
 
 public class TRetEnvEventoHelper {
 	final static Logger logger = Logger.getLogger(TRetEnvEventoTO.class);
@@ -35,5 +36,8 @@ public class TRetEnvEventoHelper {
 		}
 		return null;
 	}
-
+	public static void info(String msg) {
+		Logger.getLogger(TRetEnvEventoHelper.class).info(msg);
+		BifrostView.infoView(msg);
+	}
 }

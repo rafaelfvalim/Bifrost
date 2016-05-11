@@ -14,25 +14,31 @@ public class TEventoTO {
 	public TEventoTO() {
 	}
 
-	public TEventoTO(SignatureType signature, String versao, String chNFe, String cnpj, String cOrgao, String cpf,
-			String dhEvento, String id, String nSeqEvento, String tpAmb, String tpEvento, String verEvento,
-			String descEvento, String versaoDetEvento, String xJust) {
+	public TEventoTO(String versao, String id, String cOrgao, String tpAmb, String cnpj, String cpf, String chNFe, String dhEvento, String tpEvento, String nSeqEvento, String verEvento, String versaoDetEvento, String descEvento, String xJust) {
+		
 		evento = new TEvento();
 		infEvento = new TEvento.InfEvento();
 		detEvento = new TEvento.InfEvento.DetEvento();
-
-		detEvento.setDescEvento(descEvento);
-		detEvento.setVersao(versaoDetEvento);
-		detEvento.setXJust(xJust);
-
-		infEvento.setChNFe(chNFe);
-		infEvento.setCNPJ(cnpj);
-		infEvento.setCOrgao(cOrgao);
-		infEvento.setCPF(cpf);
-		infEvento.setDetEvento(detEvento);
-
-		evento.setSignature(signature);
+		
+		evento.setSignature(null);
 		evento.setVersao(versao);
+		
+		infEvento.setId(id);
+		infEvento.setCOrgao(cOrgao); 
+		infEvento.setTpAmb(tpAmb);
+		infEvento.setCNPJ(cnpj);
+		infEvento.setCPF(cpf);
+		infEvento.setChNFe(chNFe);
+		infEvento.setDhEvento(dhEvento);
+		infEvento.setTpEvento(tpEvento);
+		infEvento.setNSeqEvento(nSeqEvento);
+		infEvento.setVerEvento(verEvento);
+		
+		detEvento.setVersao(versaoDetEvento);
+		detEvento.setDescEvento(descEvento);
+		detEvento.setXJust(xJust);
+		infEvento.setDetEvento(detEvento);
+		
 		evento.setInfEvento(infEvento);
 
 	}

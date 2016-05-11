@@ -701,3 +701,5600 @@ com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Sessio
 	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
 	at java.lang.Thread.run(Thread.java:745)
 
+
+**** Error file opened at 20160506 210903 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Fri May 06 21:09:03,100<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.11.50.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.11.50.153:3300' not reached
+TIME        Fri May 06 21:09:03 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 10.11.50.153:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20160506 211100 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Fri May 06 21:11:00,215]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:105)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Fri May 06 21:11:00,240]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-26-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160507 163016 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Sat May 07 16:30:16,901<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:16 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53828
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:30:16,928<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:16 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53828
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [16] >Sat May 07 16:30:16,930<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:16 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53828
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:30:19,850<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:19 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53825
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:30:19,852<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:19 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53825
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [13] >Sat May 07 16:30:19,853<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:30:19 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:53825
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+
+**** Error file opened at 20160507 163111 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Sat May 07 16:31:11,619]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:197)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:101)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Sat May 07 16:31:11,645]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-28-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Error:  >Sat May 07 16:35:51,379<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54462
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,381<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54448
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,382<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54447
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,384<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54459
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,385<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54455
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,386<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54457
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,387<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54447
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,387<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54453
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,388<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54454
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,389<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54453
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,389<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54450
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,390<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54452
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,390<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54450
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [6] >Sat May 07 16:35:51,391<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54453
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:51,391<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54454
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [2] >Sat May 07 16:35:51,392<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54447
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:51,392<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54462
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,393<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54457
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,393<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54459
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,394<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54448
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,395<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54455
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,395<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54460
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,396<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54458
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,397<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54460
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [8] >Sat May 07 16:35:51,397<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54455
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [3] >Sat May 07 16:35:51,398<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54448
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [11] >Sat May 07 16:35:51,398<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54459
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [9] >Sat May 07 16:35:51,399<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54457
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [14] >Sat May 07 16:35:51,399<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54462
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [7] >Sat May 07 16:35:51,400<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54454
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [4] >Sat May 07 16:35:51,400<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54450
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:51,401<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54452
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [12] >Sat May 07 16:35:51,401<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54460
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:51,402<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54458
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [5] >Sat May 07 16:35:51,402<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54452
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [10] >Sat May 07 16:35:51,403<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54458
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:51,443<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54463
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:51,444<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54463
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [15] >Sat May 07 16:35:51,445<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54463
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:57,340<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54466
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,341<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54467
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,341<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54465
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,342<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54467
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,342<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54466
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [19] >Sat May 07 16:35:57,343<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54467
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:57,343<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54465
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [18] >Sat May 07 16:35:57,344<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54466
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [17] >Sat May 07 16:35:57,344<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54465
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:57,475<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54470
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,476<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54469
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,476<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54475
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,477<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54469
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:35:57,477<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54470
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [20] >Sat May 07 16:35:57,478<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54469
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:35:57,478<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54475
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [21] >Sat May 07 16:35:57,479<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54470
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [22] >Sat May 07 16:35:57,479<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:35:57 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54475
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+
+**** Error file opened at 20160507 164445 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Sat May 07 16:44:45,464<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54732
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:45,472<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54732
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [2] >Sat May 07 16:44:45,473<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54732
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:45,515<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54734
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:45,517<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54734
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [4] >Sat May 07 16:44:45,518<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54734
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:45,690<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54735
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:45,691<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54736
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:45,692<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54735
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:45,693<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54736
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [5] >Sat May 07 16:44:45,693<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54735
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [6] >Sat May 07 16:44:45,694<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:45 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54736
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,307<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54739
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,309<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54741
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,311<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54746
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,313<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54748
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,315<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54750
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,316<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54744
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,317<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54743
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,318<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54742
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,319<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54739
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,320<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54740
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,320<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54737
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,321<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54738
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,322<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54737
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,323<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54740
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [9] >Sat May 07 16:44:46,324<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54739
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,324<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54742
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,325<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54743
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,326<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54744
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,326<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54750
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,327<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54748
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,328<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54751
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,329<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54749
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,329<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54746
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,330<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54745
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,331<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54741
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,332<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54747
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [11] >Sat May 07 16:44:46,332<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54741
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,333<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54745
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [16] >Sat May 07 16:44:46,334<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54746
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,335<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54749
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:46,335<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54751
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [18] >Sat May 07 16:44:46,336<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54748
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [20] >Sat May 07 16:44:46,337<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54750
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [14] >Sat May 07 16:44:46,337<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54744
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [13] >Sat May 07 16:44:46,338<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54743
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [12] >Sat May 07 16:44:46,339<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54742
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [10] >Sat May 07 16:44:46,340<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54740
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [7] >Sat May 07 16:44:46,341<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54737
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,341<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54738
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [21] >Sat May 07 16:44:46,342<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54751
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [19] >Sat May 07 16:44:46,343<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54749
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [15] >Sat May 07 16:44:46,344<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54745
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:46,345<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54747
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [8] >Sat May 07 16:44:46,345<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54738
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [17] >Sat May 07 16:44:46,346<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:46 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54747
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:44:53,479<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:53 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54752
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:44:53,480<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:53 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54752
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [22] >Sat May 07 16:44:53,481<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:44:53 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54752
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:45:15,806<    
+>RfcIoException:
+    message: CPIC-CALL: CMRCV on convId: 53780800
+no SAP ErrInfo available
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:45:15,808<    
+>RfcIoException:
+    message: CPIC-CALL: CMRCV on convId: 53780800
+no SAP ErrInfo available
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [3] >Sat May 07 16:45:15,808<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: CMRCV on convId: 53780800
+no SAP ErrInfo available
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:48,014<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:48 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54845
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:48,015<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:48 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54845
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [1] >Sat May 07 16:49:48,015<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:48 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54845
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,512<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54848
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,514<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54849
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,515<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54846
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,516<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54853
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,518<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54850
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,519<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54853
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [10] >Sat May 07 16:49:51,520<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54853
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,521<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54858
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,522<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54860
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,523<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54861
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,524<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54861
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,525<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54847
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [18] >Sat May 07 16:49:51,526<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54861
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,526<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54857
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,527<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54860
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [17] >Sat May 07 16:49:51,528<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54860
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,528<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54858
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [15] >Sat May 07 16:49:51,529<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54858
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,530<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54859
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,531<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54850
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,532<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54855
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,532<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54856
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,533<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54854
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,534<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54846
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,535<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54849
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,536<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54852
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,537<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54851
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,539<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54848
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,540<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54851
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,540<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54852
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [6] >Sat May 07 16:49:51,541<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54849
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [2] >Sat May 07 16:49:51,541<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54846
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,542<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54854
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,543<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54856
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,544<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54855
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [7] >Sat May 07 16:49:51,544<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54850
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:49:51,545<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54859
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,546<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54857
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:49:51,546<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54847
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [14] >Sat May 07 16:49:51,547<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54857
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [16] >Sat May 07 16:49:51,548<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54859
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [12] >Sat May 07 16:49:51,549<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54855
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [13] >Sat May 07 16:49:51,549<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54856
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [11] >Sat May 07 16:49:51,550<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54854
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [9] >Sat May 07 16:49:51,551<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54852
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [8] >Sat May 07 16:49:51,551<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54851
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [5] >Sat May 07 16:49:51,552<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54848
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [4] >Sat May 07 16:49:51,553<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:49:51 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54847
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:50:00,239<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54862
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:50:00,240<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54863
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:50:00,241<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54862
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:50:00,242<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54863
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [20] >Sat May 07 16:50:00,242<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54863
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [19] >Sat May 07 16:50:00,243<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:00 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54862
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:50:04,730<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:04 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54866
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:50:04,731<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:04 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54866
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [21] >Sat May 07 16:50:04,731<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:50:04 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54866
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sat May 07 16:53:34,822<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:53:34 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sat May 07 16:53:34,824<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:53:34 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [3] >Sat May 07 16:53:34,824<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sat May 07 16:53:34 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:54910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+
+**** Error file opened at 20160508 024340 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Error:  >Sun May 08 02:43:40,676<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:40 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59062
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:40,759<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:40 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59062
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [2] >Sun May 08 02:43:40,760<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:40 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59062
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:44,951<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:44 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59063
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:44,953<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:44 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59063
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [3] >Sun May 08 02:43:44,953<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:44 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59063
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:47,115<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59064
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,145<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59069
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,149<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59069
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [9] >Sun May 08 02:43:47,150<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59069
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:47,151<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59065
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,152<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59074
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,153<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59073
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,154<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59072
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,154<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59066
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,155<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59068
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59067
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,157<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59071
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,158<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59070
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,159<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59064
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,160<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59070
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,161<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59071
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,163<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59067
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,164<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59068
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,165<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59066
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,166<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59072
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,166<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59073
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,167<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59074
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,167<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59065
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [14] >Sun May 08 02:43:47,168<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59074
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [13] >Sun May 08 02:43:47,169<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59073
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [12] >Sun May 08 02:43:47,170<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59072
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [6] >Sun May 08 02:43:47,171<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59066
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [8] >Sun May 08 02:43:47,172<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59068
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [7] >Sun May 08 02:43:47,173<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59067
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [11] >Sun May 08 02:43:47,174<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59071
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [10] >Sun May 08 02:43:47,175<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59070
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [4] >Sun May 08 02:43:47,176<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59064
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [5] >Sun May 08 02:43:47,177<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59065
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:47,373<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59075
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,374<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59079
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,375<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59075
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,376<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59081
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,377<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59078
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,377<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59080
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,378<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59077
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,379<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59076
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,379<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59077
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,380<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59080
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,380<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59078
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:43:47,381<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59081
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [15] >Sun May 08 02:43:47,381<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59075
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:47,382<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59079
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [21] >Sun May 08 02:43:47,382<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59081
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [18] >Sun May 08 02:43:47,383<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59078
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [20] >Sun May 08 02:43:47,383<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59080
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [17] >Sun May 08 02:43:47,384<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59077
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error:  >Sun May 08 02:43:47,384<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59076
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [19] >Sun May 08 02:43:47,385<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59079
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+Error: [16] >Sun May 08 02:43:47,385<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:43:47 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59076
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+
+**** Error file opened at 20160508 024717 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Sun May 08 02:47:17,992]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.intefaces.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:194)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:101)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Sun May 08 02:47:18,016]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-32-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Sun May 08 02:47:40,478]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.intefaces.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:194)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:101)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Sun May 08 02:47:40,491]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-22-2' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160508 025208 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Sun May 08 02:52:08,553]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.intefaces.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:194)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:101)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Sun May 08 02:52:08,578]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-23-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Error:  >Sun May 08 02:56:38,689<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:56:38 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59214
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Sun May 08 02:56:38,692<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:56:38 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59214
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [2] >Sun May 08 02:56:38,693<    RfcException: [OCTA_BASELINE|JCO_SERVER]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '191.241.240.50:sapgw00' broken
+TIME        Sun May 08 02:56:38 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      nixxi.cpp
+LINE        5082
+DETAIL      NiIRead: P=191.241.240.50:3300; L=192.168.1.100:59214
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Exception raised by OCTA_BASELINE|JCO_SERVER
+
+
+**** Error file opened at 20160510 095745 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Tue May 10 09:57:45,882]:Exception thrown by application running in JCo Server
+org.apache.axiom.om.OMException: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,38]
+	at org.apache.axiom.om.impl.builder.StAXOMBuilder.next(StAXOMBuilder.java:296)
+	at org.apache.axiom.om.impl.llom.OMDocumentImpl.buildNext(OMDocumentImpl.java:153)
+	at org.apache.axiom.om.impl.llom.OMDocumentImpl.getFirstOMChild(OMDocumentImpl.java:242)
+	at org.apache.axiom.om.impl.llom.OMDocumentImpl.getOMDocumentElement(OMDocumentImpl.java:113)
+	at org.apache.axiom.om.impl.llom.OMDocumentImpl.getOMDocumentElement(OMDocumentImpl.java:109)
+	at org.apache.axiom.om.impl.builder.StAXOMBuilder.getDocumentElement(StAXOMBuilder.java:570)
+	at org.apache.axiom.om.impl.builder.StAXOMBuilder.getDocumentElement(StAXOMBuilder.java:566)
+	at org.apache.axiom.om.util.AXIOMUtil.stringToOM(AXIOMUtil.java:54)
+	at org.apache.axiom.om.util.AXIOMUtil.stringToOM(AXIOMUtil.java:39)
+	at br.octa.service.nfe.ws.EnvConfRecebtoServiceWS.callWs(EnvConfRecebtoServiceWS.java:43)
+	at br.octa.service.nfe.ws.EnvConfRecebtoServiceWS.sendEnvEvento(EnvConfRecebtoServiceWS.java:36)
+	at br.octa.server.server.sap.Server.EnvioEvento(Server.java:182)
+	at br.octa.server.server.sap.Server$KTTSendEnvConfRecebtoWSFunctionHandler.handleRequest(Server.java:113)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,38]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:686)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2134)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2040)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1069)
+	at org.apache.axiom.util.stax.wrapper.XMLStreamReaderWrapper.next(XMLStreamReaderWrapper.java:225)
+	at org.apache.axiom.om.impl.builder.StAXOMBuilder.parserNext(StAXOMBuilder.java:668)
+	at org.apache.axiom.om.impl.builder.StAXOMBuilder.next(StAXOMBuilder.java:214)
+	... 21 more
+
+Exception thrown [Tue May 10 09:57:45,915]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-32-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+**** Error file opened at 20160510 110020 Brasilia Time Rel 3.0.9 (2012-07-19) [720.713]
+Exception thrown [Tue May 10 11:00:20,477]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.intefaces.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:204)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:103)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Tue May 10 11:00:20,503]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-37-1' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Tue May 10 11:01:59,283]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at br.octa.intefaces.mappers.ConfNFeDestTORFC.setRFCData(ConfNFeDestTORFC.java:13)
+	at br.octa.server.server.sap.Server.ConsultaNFeDestinatario(Server.java:204)
+	at br.octa.server.server.sap.Server$KTTSendConsNfeDestWsFunctionHandler.handleRequest(Server.java:103)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1052)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:980)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:160)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3366)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2415)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+
+Exception thrown [Tue May 10 11:01:59,303]:Application threw an exception from endCall 
+com.sap.conn.jco.ext.SessionException: (171) JCO_ERROR_PASSIVATE_SESSION: Session not active. The session 'Server-29-2' could not be passivated within the current thread.
+	at com.sap.conn.jco.ext.DefaultSessionReferenceProvider.jcoServerSessionPassivated(DefaultSessionReferenceProvider.java:136)
+	at com.sap.conn.jco.rt.DefaultServerWorker.callFinishedInternal(DefaultServerWorker.java:502)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2424)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:284)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:369)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:245)
+	at java.lang.Thread.run(Thread.java:745)
+

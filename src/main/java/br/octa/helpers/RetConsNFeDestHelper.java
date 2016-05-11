@@ -13,13 +13,14 @@ import org.apache.log4j.Logger;
 
 import br.inf.portalfiscal.nfe.ObjectFactory;
 import br.inf.portalfiscal.nfe.TRetConsNFeDest;
+import br.octa.view.BifrostView;
 
 public class RetConsNFeDestHelper {
 	final static Logger logger = Logger.getLogger(RetConsNFeDestHelper.class);
 
 
 	public static String toXML(TRetConsNFeDest retConsNFeDest) {
-		logger.info("Gerando XML EnvConfRecebto");
+		info("Gerando XML EnvConfRecebto");
 		try {
 			return strValueOf(retConsNFeDest);
 		} catch (JAXBException e) {
@@ -29,7 +30,7 @@ public class RetConsNFeDestHelper {
 	}
 
 	private static String strValueOf(TRetConsNFeDest retConsNFeDest) throws JAXBException {
-		logger.info("Criando XML do Objeto TEnvEvento ");
+		info("Criando XML do Objeto TEnvEvento ");
 		JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 		Marshaller marshaller = context.createMarshaller();
 		JAXBElement<TRetConsNFeDest> element = new ObjectFactory().createRetConsNFeDest(retConsNFeDest);
@@ -47,7 +48,7 @@ public class RetConsNFeDestHelper {
 	}
 
 	public static TRetConsNFeDest createRetConsNFeDestFromXMl(String xmlEnvEvento) {
-		logger.info("Gerando envento em lote da mensagem");
+		info("Gerando envento em lote da mensagem");
 		try {
 			JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -61,5 +62,8 @@ public class RetConsNFeDestHelper {
 		}
 		return null;
 	}
-
+	public static void info(String msg) {
+		Logger.getLogger(RetConsNFeDestHelper.class).info(msg);
+		BifrostView.infoView(msg);
+	}
 }

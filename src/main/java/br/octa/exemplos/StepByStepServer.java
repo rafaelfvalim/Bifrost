@@ -35,6 +35,7 @@ public class StepByStepServer
         connectProperties.setProperty(DestinationDataProvider.JCO_PASSWD, "r4f43l11");
         connectProperties.setProperty(DestinationDataProvider.JCO_LANG,   "PT");
         createDataFile(DESTINATION_NAME1, "jcoDestination", connectProperties);
+        
         connectProperties.setProperty(DestinationDataProvider.JCO_POOL_CAPACITY, "3");
         connectProperties.setProperty(DestinationDataProvider.JCO_PEAK_LIMIT,    "10");
         createDataFile(DESTINATION_NAME2, "jcoDestination", connectProperties);
@@ -45,6 +46,8 @@ public class StepByStepServer
         servertProperties.setProperty(ServerDataProvider.JCO_PROGID, "JCO_SERVER");
         servertProperties.setProperty(ServerDataProvider.JCO_REP_DEST, "ABAP_AS_WITH_POOL");
         servertProperties.setProperty(ServerDataProvider.JCO_CONNECTION_COUNT, "2");
+        
+       
         createDataFile(SERVER_NAME1, "jcoServer", servertProperties);
     }
     

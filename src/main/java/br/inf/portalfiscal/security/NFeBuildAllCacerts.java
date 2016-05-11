@@ -21,20 +21,21 @@ import javax.net.ssl.X509TrustManager;
 
 import br.octa.enums.UriCaCertsEnum;
 import br.octa.utils.PropertyUtils;
+import br.octa.view.BifrostView;
 
 /**
  * Gera o arquivo com os certificados de todos os servidores da NFE. Baseado em
  * http://www.javac.com.br/jc/posts/list/34.page
  */
-public class NFeBuildAllCacerts {
+public class NFeBuildAllCacerts implements Runnable {
 
-	private static final String CACERTS_NAME = "NFeCacerts";
-	private static final String CACERTS_PATH = System.getProperty("user.dir")
-			+ "/src/main/resources/certificados/keystore";
-	private static final char SEPARATOR = File.separatorChar;
-	private static final int TIMEOUT_WS = 30;
+	@Override
+	public void run() {
 
-	public static void main(String[] args) {
+		final String CACERTS_NAME = "NFeCacerts";
+		final String CACERTS_PATH = System.getProperty("user.dir") + "/src/main/resources/certificados/keystore";
+		final char SEPARATOR = File.separatorChar;
+
 		try {
 			PropertyUtils prop = new PropertyUtils();
 			char[] passphrase = "changeit".toCharArray();
@@ -147,10 +148,18 @@ public class NFeBuildAllCacerts {
 			out.close();
 		} catch (Exception e) {
 			e.printStackTrace();
+			BifrostView.setLogCeritificado(e.getMessage());
 		}
+		BifrostView.setLogCeritificado("Certificado instalado com sucesso!");
+		BifrostView.setProgressbarStop();
 	}
 
 	public static void get(UriCaCertsEnum hostEnum, int port, KeyStore ks) throws Exception {
+		final int TIMEOUT_WS = 30;
+		final String CACERTS_NAME = "NFeCacerts";
+		final String CACERTS_PATH = System.getProperty("user.dir") + "/src/main/resources/certificados/keystore";
+		final char SEPARATOR = File.separatorChar;
+
 		String host = hostEnum.value();
 		SSLContext context = SSLContext.getInstance("TLS");
 		TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
@@ -178,6 +187,7 @@ public class NFeBuildAllCacerts {
 			 */
 		} catch (SSLException e) {
 			error("| " + e.toString());
+			BifrostView.setLogCeritificado(e.toString());
 		}
 
 		X509Certificate[] chain = tm.chain;
@@ -196,8 +206,11 @@ public class NFeBuildAllCacerts {
 				ks.setCertificateEntry(alias, cert);
 				info("| Added certificate to keystore '" + CACERTS_PATH + SEPARATOR + CACERTS_NAME + "' using alias '"
 						+ alias + "'");
+				BifrostView.setLogCeritificado("| Added certificate to keystore '" + CACERTS_PATH + SEPARATOR
+						+ CACERTS_NAME + "' using alias '" + alias + "'");
 			}
 		}
+		
 	}
 
 	private static class SavingTrustManager implements X509TrustManager {

@@ -11,7 +11,7 @@ import java.io.File;
 
 import org.apache.log4j.Logger;
 
-import br.octa.service.nfe.ws.EnvConfRecebtoServiceSync;
+import br.octa.service.nfe.ws.EnvConfRecebtoServiceWS;
 import br.octa.utils.ConfigUtils;
 
 public class IconeTray {
@@ -19,7 +19,7 @@ public class IconeTray {
 	private TrayIcon icone;
 	private PopupMenu popup;
 	private Monitor monitor;
-	final static Logger logger = Logger.getLogger(EnvConfRecebtoServiceSync.class);
+	final static Logger logger = Logger.getLogger(EnvConfRecebtoServiceWS.class);
 
 	private void iniciaMenu()
 	{

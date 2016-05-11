@@ -13,13 +13,14 @@ import org.apache.log4j.Logger;
 
 import br.inf.portalfiscal.nfe.ObjectFactory;
 import br.inf.portalfiscal.nfe.TRetEnvEvento;
+import br.octa.view.BifrostView;
 
 public class RetEnvConfRecebtoHelper {
 	final static Logger logger = Logger.getLogger(RetEnvConfRecebtoHelper.class);
 
 
 	public static TRetEnvEvento createRetEnvEventoFromXMl(String xmlRetEnvEvento) {
-		logger.info("Gerando envento em lote da mensagem");
+		info("Gerando envento em lote da mensagem");
 		try {
 			JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -35,7 +36,7 @@ public class RetEnvConfRecebtoHelper {
 	}
 
 	public static String toXML(TRetEnvEvento retEnvEvento){
-		logger.info("Gerando XML EnvConfRecebto");
+		info("Gerando XML EnvConfRecebto");
 		try {
 			return strValueOf(retEnvEvento);
 		} catch (JAXBException e) {
@@ -46,7 +47,7 @@ public class RetEnvConfRecebtoHelper {
 	
 	private static String strValueOf(TRetEnvEvento retEnvEvento)
 			throws JAXBException {
-		logger.info("Criando XML do Objeto TEnvEvento ");
+		info("Criando XML do Objeto TEnvEvento ");
 		JAXBContext context = JAXBContext
 				.newInstance("br.inf.portalfiscal.nfe");
 		Marshaller marshaller = context.createMarshaller();
@@ -62,5 +63,9 @@ public class RetEnvConfRecebtoHelper {
 		 */
 		sw_aux = sw_aux.replaceAll("xmlns:ns2=\"http://www.w3.org/2000/09/xmldsig#\"" , "");
 		return sw_aux;
+	}
+	public static void info(String msg) {
+		Logger.getLogger(RetEnvConfRecebtoHelper.class).info(msg);
+		BifrostView.infoView(msg);
 	}
 }

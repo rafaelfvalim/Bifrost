@@ -15,12 +15,13 @@ import br.inf.portalfiscal.nfe.ObjectFactory;
 import br.inf.portalfiscal.nfe.TConsNFeDest;
 import br.inf.portalfiscal.nfe.TRetConsNFeDest;
 import br.inf.portalfiscal.www.nfe.wsdl.nfeconsultadest.NFeConsultaDestStub.NfeConsultaNFDestResult;
+import br.octa.view.BifrostView;
 
 public class ConsNFeDestHelper{
 	final static Logger logger = Logger.getLogger(ConsNFeDestHelper.class);
 
 	public static String toXML(TConsNFeDest consNFeDest){
-		logger.info("Gerando XML EnvConfRecebto");
+		info("Gerando XML EnvConfRecebto");
 		try {
 			return strValueOf(consNFeDest);
 		} catch (JAXBException e) {
@@ -31,7 +32,7 @@ public class ConsNFeDestHelper{
 	
 	private static String strValueOf(TConsNFeDest consNFeDest)
 			throws JAXBException {
-		logger.info("Criando XML do Objeto TEnvEvento ");
+		info("Criando XML do Objeto TEnvEvento ");
 		JAXBContext context = JAXBContext
 				.newInstance("br.inf.portalfiscal.nfe");
 		Marshaller marshaller = context.createMarshaller();
@@ -50,7 +51,7 @@ public class ConsNFeDestHelper{
 	}
 	
 	public static TConsNFeDest createConsNfeDestFromXMl(String xmlEnvEvento) {
-		logger.info("Gerando envento em lote da mensagem");
+		info("Gerando envento em lote da mensagem");
 		try {
 			JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -65,9 +66,9 @@ public class ConsNFeDestHelper{
 	}
 
 	public static TRetConsNFeDest parseResultToObj(NfeConsultaNFDestResult result) {
-		logger.info("Parse return of webservice");
+		info("Parse return of webservice");
 		String xml = result.getExtraElement().toString();
-		logger.debug("XML Retorno....: " + xml);
+		info("XML Retorno....: " + xml);
 		JAXBContext context;
 		try {
 			context = JAXBContext.newInstance("br.inf.portalfiscal.nfe");
@@ -79,8 +80,13 @@ public class ConsNFeDestHelper{
 			return element.getValue();
 		} catch (JAXBException e) {
 			e.printStackTrace();
+			info(e.getMessage());
 		}
 		return null;
+	}
+	public static void info(String msg) {
+		Logger.getLogger(ConsNFeDestHelper.class).info(msg);
+		BifrostView.infoView(msg);
 	}
 
 

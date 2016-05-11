@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 
 import br.inf.portalfiscal.nfe.ObjectFactory;
 import br.inf.portalfiscal.nfe.TRetDownloadNFe;
+import br.octa.view.BifrostView;
 
 public class RetDownloadNFeHelper {
 	final static Logger logger = Logger.getLogger(RetDownloadNFeHelper.class);
@@ -61,5 +62,8 @@ public class RetDownloadNFeHelper {
 		}
 		return null;
 	}
-
+	public static void info(String msg) {
+		Logger.getLogger(RetDownloadNFeHelper.class).info(msg);
+		BifrostView.infoView(msg);
+	}
 }
